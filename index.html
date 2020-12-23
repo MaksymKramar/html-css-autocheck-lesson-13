@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Задание 1 BEM. Блок. -->
+        <!-- Что это? Шапка страницы/page-header -->
+        <header class="page-header">page-header</header>
+        <!-- Что это? Контейнер/container -->
+        <main class="container">
+            <!-- Что это? Заголовок/title -->
+            <h2 class="title">title</h2>
+            <!-- Какой? С большими буквами/big-letters -->
+            <!-- Что это? Статья о БЭМ/bem-article -->
+            <article class="bem-article">
+                <!-- Какой? Светлый заголовок/header-light -->
+                <!-- Какой? Темный низ/footer-dark -->
+            </article>
+        </main>
+        <!-- Что это? Низ страницы/page-footer -->
+        <footer class="page-footer">page-footer</footer>
+    <!-- Задание 2 BEM. Элемент. -->
+        <form class="authentication" autocomplete="off" method="POST" action="javascript:void(0);">
+            <label class="authentication__label">
+                <span class="authentication__title">Логин</span>
+                <input class="authentication__input" type="text" name="login" placeholder=" " />
+            </label>
+            <label class="authentication__label">
+                <span class="authentication__title">Пароль</span>
+                <input class="authentication__input" type="password" name="password" placeholder=" " />
+            </label>
+            <button class="authentication__btn" type="submit">
+                Отправить
+            </button>
+        </form>
+    <!-- Задание 3 BEM. Элемент - плоская структура. -->
+        <form class="authentication" autocomplete="off" method="POST" action="javascript:void(0);">
+            <label class="authentication__label">
+                <span class="authentication__title">Логин</span>
+                <input class="authentication__input" type="text" name="login" placeholder=" " />
+            </label>
+            <label class="authentication__label">
+                <span class="authentication__title">Пароль</span>
+                <input class="authentication__input" type="password" name="password" placeholder=" " />
+            </label>
+            <button class="authentication__btn" type="submit">
+                Отправить
+            </button>
+        </form>
+    <!-- Задание 4 BEM. Модификатор. -->
+        <form class="authentication authentication--focused" autocomplete="off" method="POST" action="javascript:void(0);">
+            <label class="authentication__label">
+                <span class="authentication__title">Логин</span>
+                <input class="authentication__input" type="text" name="login" placeholder=" " />
+            </label>
+            <label class="authentication__label">
+                <span class="authentication__title">Пароль</span>
+                <input class="authentication__input" type="password" name="password" placeholder=" " />
+            </label>
+            <button class="authentication__btn authentication__btn--focused" type="submit">
+                Отправить
+            </button>
+        </form>
+    <!-- Задание 5 BEM. Микс из блоков. -->
+        <form class="authentication" autocomplete="off" method="POST" action="javascript:void(0);">
+            <label class="authentication__label">
+                <span class="authentication__title">Логин</span>
+                <input class="authentication__input" type="text" name="login" placeholder=" " />
+            </label>
+            <label class="authentication__label">
+                <span class="authentication__title">Пароль</span>
+                <input class="authentication__input" type="password" name="password" placeholder=" " />
+            </label>
+            <button class="btn btn--focused authentication__btn" type="submit">
+                Отправить
+            </button>
+        </form>
+    
+</body>
+</html>
